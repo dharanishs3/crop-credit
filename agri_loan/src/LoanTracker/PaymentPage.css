@@ -1,0 +1,111 @@
+/* src/components/PaymentPage.css */
+.payment-page {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: url('https://images.unsplash.com/photo-1561500327-817a92f9479b') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .payment-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .payment-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .payment-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .payment-header p.application-id {
+    font-size: 1.2rem;
+    color: #f1c40f; /* Yellow for emphasis */
+  }
+  
+  .payment-card {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .payment-summary {
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-summary h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .payment-summary ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .payment-summary li {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .payment-form {
+    margin-top: 20px;
+  }
+  
+  .payment-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #3498db; /* Blue for headings */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .form-group input:focus {
+    border-color: #3498db; /* Blue for focus */
+    outline: none;
+  }
+  
+  .submit-btn {
+    background: #e74c3c; /* Red for button */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #c0392b; /* Darker red for hover effect */
+  }
+  

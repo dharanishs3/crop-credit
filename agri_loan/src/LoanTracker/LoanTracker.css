@@ -1,0 +1,155 @@
+/* Main page container */
+.loan-monitoring-page {
+    font-family: 'Poppins';
+    background: #7cb988;
+    background: radial-gradient(at center top, #c5f2cee6, #6ae57d);
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Container for the loan tracking content */
+.loan-monitoring-container {
+    width: 90%;
+    min-height: 81.2vh;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+}
+
+/* Container for loan cards */
+.loan-card-container {
+    display: flex; /* Align cards in a row */
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between cards */
+    width: 100%; /* Ensure container width is full */
+    align-items: center; /* Center cards horizontally */
+    padding: 0 10px; /* Padding to handle screen edge */
+}
+
+/* Card container */
+.loan-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    color: #fff;
+    width: 100%; /* Make the card take full width of the container */
+    max-width: 1000px; /* Maximum width for larger screens */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Card header */
+.loan-card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 10px;
+    color: black;
+}
+
+.loan-card-header h3 {
+    color: greenyellow;
+    margin: 0;
+}
+
+.loan-card-header p {
+    margin: 5px 0;
+}
+
+/* Card body */
+.loan-card-body {
+    padding: 10px 0;
+}
+
+.loan-card-body p {
+    margin: 5px 0;
+}
+
+/* Card actions */
+.loan-card-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-now-btn,
+.view-schedule-btn {
+    background-color: #4caf50;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.view-schedule-btn {
+    background-color: #007bff;
+}
+
+.pay-now-btn:hover {
+    background-color: #218838;
+}
+
+.view-schedule-btn:hover {
+    background-color: #138496;
+}
+
+/* Repayment schedule wrapper */
+.repayment-schedule-wrapper {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Repayment schedule items */
+.repayment-item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+/* No loans message */
+.no-loans-message {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .loan-card-container {
+        padding: 0; /* Remove padding on small screens */
+    }
+
+    .loan-card {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .loan-card-header,
+    .loan-card-body,
+    .loan-card-actions {
+        padding: 10px 0;
+    }
+
+    .pay-now-btn,
+    .view-schedule-btn {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+.loanTracker-footer{
+    width: 100%;
+}

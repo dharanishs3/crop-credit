@@ -1,0 +1,169 @@
+
+
+.emi-cal-page{
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, #9cd682, #b6c6a2);
+
+}
+/* Navbar styling */
+.navbar {
+  
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Page container to center the card */
+.emi-calculator-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px;
+  margin-top: 100px; /* Space for Navbar */
+  margin-bottom: 80px; /* Space for Footer */
+}
+
+/* Card styling */
+.emi-calculator {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  transition: transform 0.3s ease;
+}
+
+.emi-calculator:hover {
+  transform: translateY(-10px);
+}
+
+/* Heading styling */
+.emi-calculator h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #56ab2f;
+  box-shadow: 0 0 5px rgba(86, 171, 47, 0.5);
+}
+
+/* Button styling */
+.calculate-button {
+  background-color: #445240;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.calculate-button:hover {
+  background-color: #4c8c25;
+  transform: translateY(-2px);
+}
+
+/* Result styling */
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.result h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #56ab2f;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer styling */
+.footer {
+  
+  color: white;
+
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .emi-calculator {
+    padding: 20px;
+  }
+
+  .emi-calculator h2 {
+    font-size: 20px;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .calculate-button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .result h3 {
+    font-size: 18px;
+  }
+}
